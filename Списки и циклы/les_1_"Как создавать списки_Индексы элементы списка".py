@@ -36,4 +36,3 @@ guests = ['Alice', 'Bob', 'Charlie', 'David']
 
 print(guests[-1])
 print(guests[-4])
-

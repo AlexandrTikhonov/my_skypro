@@ -27,14 +27,38 @@
 #         print(f"{word} - картавое слово")
 
 #----------------------------------------------------------------------
-"""
-Дан список трат, суммировать их и вывести общие расходы
-"""
+# """
+# Дан список трат, суммировать их и вывести общие расходы
+# """
+#
+# expenses = [200, 450, 320, 1100, 650, 280, 325, 490, 830, 420]
+# total = 0
+#
+# for payment in expenses:
+#     total += payment
+#
+# print(f"Всего потрачено: {total}")
 
-expenses = [200, 450, 320, 1100, 650, 280, 325, 490, 830, 420]
-total = 0
+# -----------------------------------------------------------------------
+medals = ["gold", "gold", "silver", "gold", "bronze", "silver", "gold", "gold", "silver", "chocolate"]
 
-for payment in expenses:
-    total += payment
+gold_count = 0
+silver_count = 0
+bronze_count = 0
+chocolate_count = 0
 
-print(f"Всего потрачено: {total}")
+for medal in medals:
+    if medal == "gold":
+        gold_count += 1
+    elif medal == "silver":
+        silver_count += 1
+    elif medal == "bronze":
+        bronze_count += 1
+    elif medal == "chocolate":
+        chocolate_count += 1
+
+print(f"Золотых медалей {gold_count}")
+print(f"Серебрянных медалей {silver_count}")
+print(f"Бронзовых медалей {bronze_count}")
+print(f"Шоколадных медалей {chocolate_count}")
+
